@@ -90,6 +90,7 @@ public class Candy extends Snack {
 	}
 
 	@Override
+	// displays parameters in tabular form
 	public String toString() {
 		String string = "Product Name\t" + getName() + "\nPrice\t\t" + getPrice() + "\nMax Quantity\t" + getMaxQuantity() + 
 				"\nCurrent Quantity\t" + getCurrentQuantity() + "\nFlavor\t\t" + getFlavor();
