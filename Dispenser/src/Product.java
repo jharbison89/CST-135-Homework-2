@@ -28,7 +28,7 @@ public abstract class Product {
 	}
 	
 	public void setName(String name){
-		
+		this.name = name;
 	}
 	
 	public String getName() {
@@ -36,7 +36,7 @@ public abstract class Product {
 	}
 	
 	public void setPrice(double price) {
-		
+		this.price = price;
 	}
 	
 	public double getPrice() {
@@ -44,7 +44,7 @@ public abstract class Product {
 	}
 	
 	public void setCurrentQuantity(int currentQuantity) {
-		
+		this.currentQuantity = currentQuantity;
 	}
 	
 	public int getCurrentQuantity() {
@@ -52,7 +52,7 @@ public abstract class Product {
 	}
 	
 	public void setMaxQuantity(int maxQuantity) {
-		
+		this.maxQuantity = maxQuantity;
 	}
 	
 	public int getMaxQuantity() {
