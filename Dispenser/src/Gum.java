@@ -54,6 +54,7 @@ public class Gum extends Snack{
 	}
 	
 	@Override
+	// displays parameters in tabular form
 	public String toString() {
 		return "Product Name\t" + getName() + "\nPrice\t\t" + getPrice() + "\nMax Quantity\t" + getMaxQuantity() + 
 				"\nCurrent Quantity\t" + getCurrentQuantity() + "\nFlavor\t\t" + getFlavor() + "\nPieces\t\t" + pieces;
