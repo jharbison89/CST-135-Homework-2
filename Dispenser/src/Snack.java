@@ -1,12 +1,20 @@
 
 public abstract class Snack extends Product {
 
+	/* 
+	 * Created by James Harbison and Chase Hausman
+	 * This class extends the product class with items unique to snacks in a vending machine
+	 */
+	
+	// initialize variables
 	private String flavor;
 	
+	// no arg constructor
 	protected Snack(){
 		flavor = "";
 	}
 	
+	// overloaded constructor
 	protected Snack(String name, double price, int maxQuantity, int currentQuantity, String flavor) {
 		setName(name);
 		setPrice(price);
@@ -15,6 +23,7 @@ public abstract class Snack extends Product {
 		this.flavor = flavor;
 	}
 	
+	// constructor that copies an existing snack
 	protected Snack(Snack snack) {
 		setName(snack.getName());
 		setPrice(snack.getPrice());

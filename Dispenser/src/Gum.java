@@ -1,14 +1,21 @@
 
 public class Gum extends Snack{
 	
-	private int pieces;
-	private boolean minty;
+	/*
+	 * Created by James Harbison and Chase Hausman
+	 * This class extends the Snack class with items unique to Gum in a vending machine
+	 */
 	
+	private int pieces;		// indicates number of  pieces in a pack
+	private boolean minty;	// true is a mint flavored gum, false is not mint flavored
+	
+	// no arg constructor
 	public Gum() {
 		pieces = 5;
 		minty = false;
 	}
 	
+	// overloaded constructor
 	public Gum(String name, double price, int maxQuantity, int currentQuantity, String flavor, int pieces, boolean minty) {
 		setName(name);
 		setPrice(price);
@@ -19,6 +26,7 @@ public class Gum extends Snack{
 		this.minty = minty;
 	}
 	
+	// constructor that copies an existing Gum
 	public Gum(Gum gum) {
 		setName(gum.getName());
 		setPrice(gum.getPrice());

@@ -1,12 +1,18 @@
 
 public class Candy extends Snack {
 	
-	private boolean nuts;
-	private boolean caramel;
-	private boolean chocolate;
-	private boolean bar;
-	private boolean kingSize;
+	/*
+	 * Created by James Harbison and Chase Hausman
+	 * This class extends the Snack class with items unique to Candy in a vending machine
+	 */
 	
+	private boolean nuts;		// true contains nuts, false does not contain nuts 
+	private boolean caramel;	// true contains caramel, false does not contain caramel
+	private boolean chocolate;	// true contains chocolate, false does not contain chocolate
+	private boolean bar;		// true is a candy bar, false is not a bar ie. Skittles or M&Ms
+	private boolean kingSize;	// true is a king size, false is regular size
+	
+	// no arg constructor
 	public Candy() {
 		nuts = false;
 		caramel = false;
@@ -15,6 +21,7 @@ public class Candy extends Snack {
 		kingSize = false;
 	}
 	
+	// overloaded constructor
 	public Candy(String name, double price, int maxQuantity, int currentQuantity, String flavor, boolean nuts, boolean caramel, boolean chocolate, boolean bar, boolean kingSize) {
 		setName(name);
 		setPrice(price);
@@ -28,6 +35,7 @@ public class Candy extends Snack {
 		this.kingSize = kingSize;
 	}
 	
+	// constructor that copies a current Candy
 	public Candy(Candy candy) {
 		setName(candy.getName());
 		setPrice(candy.getPrice());
