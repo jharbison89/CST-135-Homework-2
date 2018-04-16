@@ -11,7 +11,7 @@ public abstract class Snack extends Product {
 	
 	// no arg constructor
 	protected Snack(){
-		flavor = "";
+		flavor = "Regular";
 	}
 	
 	// overloaded constructor
@@ -40,7 +40,6 @@ public abstract class Snack extends Product {
 		return flavor;
 	}
 	
-	// returns parameters in tabular format
 	public String toString() {
 		return "Product Name\t" + getName() + "\nPrice\t\t" + getPrice() + "\nMax Quantity\t" + getMaxQuantity() + 
 				"\nCurrent Quantity\t" + getCurrentQuantity() + "\nFlavor\t\t" + flavor;
